@@ -1,7 +1,7 @@
 # G-Presto-Anti-Cheat-Reverse-Engineered
 G-Presto Anti-Cheat Reverse Engineered.
 
-State: Reverse Engineered 30 / 100%
+State: Reverse Engineered 20 / 100%
 
 Progress:
 - [x] Reverse critical functions for bypassing
