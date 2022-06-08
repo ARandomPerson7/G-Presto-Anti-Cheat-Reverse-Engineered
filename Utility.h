@@ -202,12 +202,12 @@ int android_setCpu(int a1, __int64 a2) {
 }
 
 void android_getCpuFeatures() {
-    pthread_once(&dword_579BC, &sub_17C3C);
+    pthread_once(&dword_579BC, &check_cpu_info);
     return qword_579C8;
 }
 
 void android_getCpuFamily() {
-    pthread_once(&dword_579BC, &sub_17C3C);
+    pthread_once(&dword_579BC, &check_cpu_info);
     if (byte_579C0) {
         return 4;
     } else {
@@ -216,7 +216,7 @@ void android_getCpuFamily() {
 }
 
 void android_getCpuCount() {
-  pthread_once(&dword_579BC, &sub_17C3C);
-  return (unsigned int)dword_579D0;
+    pthread_once(&dword_579BC, &check_cpu_info);
+    return (unsigned int)dword_579D0;
 }
 
